@@ -10,7 +10,7 @@ def calcular_imc():
     except ValueError:
         resultado_label.config(text="Por favor, ingrese valores válidos.")
 
-# Crear la ventana principal
+#ventana principal( raiz)
 raiz = Tk()
 raiz.title("Índice de masa corporal")
 raiz.resizable(1, 1)
@@ -47,11 +47,11 @@ altura.place(x=565, y=505)
 peso = Entry(frame)
 peso.place(x=565, y=535)
 
-# Crear un botón que llame a la función calcular_imc cuando se presione
+# botón llama a la función calcular_imc cuando se presione
 boton = Button(frame, text="Calcular IMC", command=calcular_imc)
 boton.place(x=565, y=565)
 
-# Label para mostrar el resultado del IMC
+# mostrar el resultado del IMC
 resultado_label = Label(frame, text="", font=("Times New Roman", 15))
 resultado_label.place(x=500, y=600)
 
